@@ -6,12 +6,12 @@
 #    By: ymehlil <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/28 14:31:01 by ymehlil           #+#    #+#              #
-#    Updated: 2023/08/06 19:14:21 by ymehlil          ###   ########.fr        #
+#    Updated: 2023/08/07 11:24:34 by ymehlil          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= polymorphism
-SRC		= main.cpp Animal.cpp
+SRC		= main.cpp Animal.cpp Dog.cpp
 OBJ		= $(SRC:.cpp=.o)
 CC		= c++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98

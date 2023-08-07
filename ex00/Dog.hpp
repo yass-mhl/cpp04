@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymehlil <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/06 19:37:08 by ymehlil           #+#    #+#             */
-/*   Updated: 2023/08/07 11:35:24 by ymehlil          ###   ########.fr       */
+/*   Created: 2023/08/07 11:04:28 by ymehlil           #+#    #+#             */
+/*   Updated: 2023/08/07 11:25:19 by ymehlil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
-#include "Dog.hpp"
+#ifndef DOG_HPP
+# define DOG_HPP
+# include "Animal.hpp"
 
-int main() {
-	Animal test;
-	Dog chien;
+class Dog : public Animal {
+    public:
+        Dog();
+        Dog(const Dog& src);
+        ~Dog();
+        Dog& operator=(const Dog& rhs);
 
-	test.makeSound();
-	chien.makeSound();
-}
+        void makeSound() const;
+};
+
+#endif
